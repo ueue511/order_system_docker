@@ -1,0 +1,18 @@
+version: '3.7'
+
+services:
+  app:
+    build: ./app
+    ports:
+      - 8080:80
+    # volumes:
+    #   - ./app/:/usr/src/app/
+    # tty: true
+    # stdin_open: true
+    # command: /bin/sh
+  # nginx:
+  #   build: ./nginx
+  #   port:
+  #     - 8080:80
+  #   depends_on:
+  #     - app
